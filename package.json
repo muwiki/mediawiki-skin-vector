@@ -1,5 +1,6 @@
 {
   "name": "mediawiki-skin-vector",
+  "version": "0.1",
   "scripts": {
     "test": "grunt test"
   },
