@@ -1,27 +1,36 @@
 .mw-body-content {
-  div.customTag {
-    background-color: #e3e3e3;
-    border: 1px solid #a7d7f9;
-    margin: 10px 0 15px 0;
+  .customTag {
+    display: block;
+    line-height: inherit;
+    margin: 0.5em 0;
 
     .title {
-      background-color: #bcbcde;
+      font-weight: bold;
+    }
+
+    &.assumption {}
+    &.axiom {}
+    &.conjecture {}
+    &.corollary {}
+    &.definition {}
+    &.example {
+      background-color: #f9f9f9;
+      border: 1px solid #a7d7f9;
+      margin: 10px 0 15px 0;
       padding: 5px 10px;
     }
-
-    .content {
-      padding: 15px 10px 5px 10px;
-    }
-
-    &.definition {
+    &.lemma {}
+    &.notation {}
+    &.proof {
       .title {
+        font-weight: normal;
+        font-style: italic;
       }
     }
-
-    &.sentence {
-      .title {
-        background-color: #afdea8;
-      }
-    }
+    &.proposition {}
+    &.remark {}
+    &.result {}
+    &.solution {}
+    &.theorem {}
   }
 }
