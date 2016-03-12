@@ -43,6 +43,46 @@
     padding: 3px 4px;
     border: 1px solid black;
   }
+
+  ul.roman, ul.letters {
+    margin-left: 2em;
+    li {
+      list-style-type: none;
+      list-style-image: none;
+    }
+    li:before {
+      content: "(?)";
+      display: inline-block;
+      margin-left: -2em; /* same as padding-left set on li */
+      width: 1.9em; /* same as padding-left set on li */
+      padding-right: 0.5em;
+      text-align: right;
+    }
+  }
+  ul.roman {
+    li:nth-of-type(1):before { content: "(i)"; }
+    li:nth-of-type(2):before { content: "(ii)"; }
+    li:nth-of-type(3):before { content: "(iii)"; }
+    li:nth-of-type(4):before { content: "(iv)"; }
+    li:nth-of-type(5):before { content: "(v)"; }
+    li:nth-of-type(6):before { content: "(vi)"; }
+    li:nth-of-type(7):before { content: "(vii)"; }
+    li:nth-of-type(8):before { content: "(viii)"; }
+    li:nth-of-type(9):before { content: "(ix)"; }
+    li:nth-of-type(10):before { content: "(x)"; }
+  }
+  ul.letters {
+    li:nth-of-type(1):before { content: "(a)"; }
+    li:nth-of-type(2):before { content: "(b)"; }
+    li:nth-of-type(3):before { content: "(c)"; }
+    li:nth-of-type(4):before { content: "(d)"; }
+    li:nth-of-type(5):before { content: "(e)"; }
+    li:nth-of-type(6):before { content: "(f)"; }
+    li:nth-of-type(7):before { content: "(g)"; }
+    li:nth-of-type(8):before { content: "(h)"; }
+    li:nth-of-type(9):before { content: "(i)"; }
+    li:nth-of-type(10):before { content: "(j)"; }
+  }
 }
 
 div.math-equation {
